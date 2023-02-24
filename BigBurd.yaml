@@ -1,0 +1,50 @@
+Name: BigBurd on AWS
+Description: |
+  The ICU EEG dataset includes data from ~2000 hospitalized patients who underwent continuous electroencephalography brain monitoring as part of their clinical care. This data was used to develop SPaRCNet, a deep neural network that detects seizures and other potentially harmful patterns of brain activity; TEEGLLTEEG ("this EEG looks like that EEG"), a deep neural network that detects the same patterns as SPaRCNet but is interpretabl; and BigBurd, a model that predicts the neurologic disability following hospital discharge. These data are shared via the BDSP (Brain Data Science Platform, a resource developed by an international coalition of investigators that aggregates and harmonizes a wide range of large-scale human clinical neuroscience data to support research aimed at improving diagnosis, treatment, and prevention of neurologic disease, and promotion of brain health. The summary data provided here are released for the benefit of the wider scientific community without restriction on use.
+Documentation: More documentation can be found [here](https://bdsp-core.github.io/)
+Contact: mwestove@bidmc.harvard.edu
+ManagedBy: "[CDAC](https://bdsp-core.github.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - BDSP
+  - Harvard Medical School
+  - MGH
+  - BIDMC
+  - EEG
+  - ICU
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: "[MIT](https://github.com/bdsp-core/ICU_EEG_Neuro_Prognosis/blob/main/LICENSE); [terms of use](https://github.com/bdsp-core/ICU_EEG_Neuro_Prognosis/blob/main/BDSP-Data-Policies.md)"
+Resources:
+  - Description: ICU EEG Dataset
+    ARN: arn:aws:s3:::noaa-nexrad-level2
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: ICU EEG Data Code and Metadata description
+      URL: https://github.com/bdsp-core/ICU_EEG_Neuro_Prognosis
+      Services: EC2
+      AuthorName: Jin Jing, PhD, M. Brandon Westover, MD, PhD
+      AuthorURL: https://bdsp-core.github.io/team/
+  Publications:
+    - Title: Automated Annotation of Epileptiform Burden and Its Association with Outcomes. Ann Neurol 2021 Aug; 90 (2); 300-311 doi 10.1002/ana.26161. Epub 2021Jul 20. PMID:34231244 ; PMCID:PMC8516549 
+      URL: https://pubmed.ncbi.nlm.nih.gov/34231244
+      AuthorName: Zafar SF, Rosenthal ES, Jing J, Ge W, Tabaeizadeh M, Aboul Nour H, Shoukat, M, Sun H, Javed F, Kassa S, Edhi M, Bordbar E, Gallagher J, Moura V Jr, Ghanta, M, Shao YP, An S, Sun J, Cole AJ, Westover MB.
+    - Title: Interrater Reliability of Expert Electroencephalographers Identifying Seizures and Rhythmic and Periodic Patterns in Electroencephalograms. Neurology. 2022 Dec doi 10.1212/WNL.0000000000201670. Epub ahead of print. PMID 36460472.
+      URL: https://pubmed.ncbi.nlm.nih.gov/36460472/  
+      AuthorName: Jing J, Ge W, Struck AF, Fernandes MB, Hong S, An S, Fatima S, Herlopian A, Karakis I, Halford JJ, Ng MC, Johnson EL, Appavu BL, Sarkis RA, Osman G, Kaplan PW, Dhakar MB, Jayagopal LA, Sheikh Z, Taraschenko O, Schmitt S, Haider HA, Kim JA, Swisher CB, Gaspard N, Cervenka MC, Rodriguez Ruiz AA, Lee JW, Tabaeizadeh M, Gilmore EJ, Nordstrom K, Yoo JY, Holmes MG, Herman ST, Williams JA, Pathmanathan J, Nascimento FA, Fan Z, Nasiri S, Shafi MM, Cash SS, Hoch DB, Cole AJ, Rosenthal ES, Zafar SF, Sun J, Westover MB
+    - Title: Deep active learning for Interictal Ictal Injury Continuum EEG patterns. J Neurosci Methods 2021 Mar 1; 351 108966 doi 10.1016/j.jneumeth.2020.108966. Epub 2020 Oct 22. PMID:33131680 ; PMCID:PMC8135050 
+      URL: https://pubmed.ncbi.nlm.nih.gov/33131680
+      AuthorName: Ge W, Jing J, An S, Herlopian A, Ng M, Struck AF, Appavu B, Johnson EL, Osman G, Haider HA, Karakis I, Kim JA, Halford JJ, Dhakar MB, Sarkis RA, Swisher CB, Schmitt S, Lee JW, Tabaeizadeh M, Rodriguez A, Gaspard N, Gilmore E, Herman, ST, Kaplan PW, Pathmanathan J, Hong S, Rosenthal ES, Zafar S, Sun J, Westover MB  
+    - Title: Rapid annotation of seizures and interictal-ictal-injury continuum EEG
+      URL: https://pubmed.ncbi.nlm.nih.gov/33099261
+      AuthorName: Jing J, d'Angremont E, Ebrahim S, Tabaeizadeh M, Ng M, Herlopian A, Dauwels J, Brandon Westover M. J Neurosci Methods 2021 Jan 1; 347; 108956 doi 10.1016/j.jneumeth.2020.108956. Epub 2020 Oct 21. PMID:33099261 ; PMCID:PMC7744406 
